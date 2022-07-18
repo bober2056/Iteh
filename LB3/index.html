@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src ="myScript.js"></script>
+    <title>Document</title>
+</head>
+<body onload="load()">
+    <select id = "mySelect" onchange="select()">
+        <option value="3">Ничего</option>
+        <option value="0">Кот</option>
+        <option value="1">Слон</option>
+        <option value="2">Птица</option>
+      </select><br/>
+      <img id = "picture-box" alt = "Ничего" width="500px" height="500px"/>
+      <p>Альтернативный текст:</p><input type="text" id = "text-box" onchange="altTextChange()"/>
+      <p>Высота:</p><input type="range" min="0" max="200" step="1" value="50" id ="height-ctrl" onchange="heightChange()"> 
+      <p>Ширина:</p><input type="range" min="0" max="200" step="1" value="50" id = "width-ctrl" onchange="widthChange()"> 
+      <p>Толщина:</p><input type="range" min="0" max="50" step="1" value="0" id = "border-ctrl" onchange="borderChange()"> 
+</body>
+</html>
